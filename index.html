@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UwU</title>
+
+<style>
+
+#si{background-color: aqua; left: 40% ;}
+#no{background-color: red; left: 60% ;}
+
+button{width: 12em;height: 7em; position: fixed;}
+
+</style>
+
+</head>
+<body align="center">
+    
+<button id="si" onclick="uwu()"> <h1> si </h1></button>
+<button id="no" onmouseover="diquesi()"> <h1> no </h1></button>
+
+
+<script>
+
+var si = document.getElementById('si');
+var no = document.getElementById('no');
+var z = 0;
+
+function diquesi() {
+
+    if(z<10){
+var x = Math.random()*90;
+var y = Math.random()*90;
+
+no.style.left= x+'%';
+no.style.top= y+'%';
+
+z++;
+    }else{
+        // no.innerHTML=si;
+no.innerHTML="<h1 >si</h1>";
+no.style.backgroundColor="aqua";
+no.addEventListener("click", uwu);  
+
+
+}
+
+}
+
+function uwu() {
+    
+document.body.innerHTML="<h1>i know you will say that 😜</h1>";
+
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
